@@ -1,0 +1,17 @@
+
+<% if @movies.empty? %>
+	<h2> Sorry no movies yet... </h2>
+<% else %>
+<ul>
+
+<% @movies.each do |m| %>
+
+<li> <%= link_to m.name, m %> </li>
+<%= link_to "Delete", m, method: :delete, data: {confirm: 'Are you sure'} %>
+<% end %>
+
+<% end %>
+</ul>
+</div>
+
+<%= link_to "New Movie", new_movie_path %>

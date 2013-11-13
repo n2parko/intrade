@@ -1,0 +1,16 @@
+<%= form_for([@movie, @movie.tickets.build]) do |f| %>
+	
+	<%= f.label :size %>
+	<%= f.text_field :size %>
+	
+	<%= f.label :amount %>
+	<%= f.text_area :amount %>
+	
+	<%= f.submit %>
+
+<%end%>
+	
+	
+
+
+

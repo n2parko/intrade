@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  size: 1
+  price: 1
+  buy: false
+  onmarket: false
+
+two:
+  size: 1
+  price: 1
+  buy: false
+  onmarket: false

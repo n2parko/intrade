@@ -1,0 +1,27 @@
+<div id = "form" >
+
+<%= form_for([@movie, @movie.tickets.build]) do |t| %>
+	<p>
+	<%= t.label :size %>
+	<%= t.text_field :size %>
+	</p>
+	
+	<p>
+	<%= t.label :price %>
+	<%= t.text_field :price %>
+	</p>
+	
+	<p>
+	
+	Bid
+	<%= t.radio_button :buy, true %>
+	
+	Ask
+	<%= t.radio_button :buy, false %>
+	</p>
+	
+	<%= t.submit %>
+
+<%end%>
+
+</div>

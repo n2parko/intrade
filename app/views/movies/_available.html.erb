@@ -1,0 +1,15 @@
+<div id = "available" >
+
+<h3> Bids </h3>
+
+<% @available_bids.each do |ticket| %>
+<%= "#{ticket.size} lots for $ #{ticket.price}" %> <br>
+<% end %>
+
+<h3> Asks </h3>
+
+<% @available_asks.each do |ticket| %>
+<%= link_to "#{ticket.size} lots for $ #{ticket.price}", [@movie, ticket] %> <br>
+<% end %>
+
+</div>
